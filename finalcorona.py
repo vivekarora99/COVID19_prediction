@@ -37,7 +37,7 @@ y_recovered=miss(y_recovered.reshape(-1,1))
 y_deaths=miss(y_deaths.reshape(-1,1))
     
 #transforming normal data into polynomial data 
-poly_reg = PolynomialFeatures(degree =3)
+poly_reg = PolynomialFeatures(degree =4)
 X_poly=poly_reg.fit_transform(X_days.reshape(-1,1))
 
 
